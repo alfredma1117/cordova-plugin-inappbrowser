@@ -713,6 +713,8 @@ public class InAppBrowser extends CordovaPlugin {
                 if(openWindowHidden) {
                     dialog.hide();
                 }
+                
+                close.setWidth(close.setHeight());
             }
         };
         this.cordova.getActivity().runOnUiThread(runnable);
