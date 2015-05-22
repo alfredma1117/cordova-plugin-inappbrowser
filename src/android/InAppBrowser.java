@@ -626,7 +626,7 @@ public class InAppBrowser extends CordovaPlugin {
 
                 // Close/Done button
                 Button close = new Button(cordova.getActivity());
-                RelativeLayout.LayoutParams closeLayoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.MATCH_PARENT);
+                RelativeLayout.LayoutParams closeLayoutParams = new RelativeLayout.LayoutParams(this.dpToPixels(40), LayoutParams.MATCH_PARENT);
                 closeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
                 close.setLayoutParams(closeLayoutParams);
                 forward.setContentDescription("Close Button");
